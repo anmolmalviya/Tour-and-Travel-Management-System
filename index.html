@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Travel & Tour Management System</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><h1>Travel & Tour Management System</h1><p>Java + MySQL</p></header>
+<main>
+<section class="card"><h2>Customer Registration</h2>
+<form action="/register" method="post">
+<input name="name" placeholder="Full Name" required><input name="gender" placeholder="Gender">
+<input name="email" type="email" placeholder="Email"><input name="phone" placeholder="Phone">
+<input name="address" placeholder="Address"><input name="city" placeholder="City">
+<input name="username" placeholder="Username" required><input name="password" type="password" placeholder="Password" required>
+<button>Register</button></form></section>
+
+<section class="card"><h2>Customer Login</h2>
+<form action="/login" method="post"><input name="username" placeholder="Username" required><input name="password" type="password" placeholder="Password" required><button>Login</button></form></section>
+
+<h2>Tour Packages</h2>
+<div class="packages">
+<div class="package"><h3>Goa Beach Tour</h3><p>5 Days | ₹15,000/person</p></div>
+<div class="package"><h3>Manali Adventure</h3><p>6 Days | ₹18,000/person</p></div>
+<div class="package"><h3>Rajasthan Heritage</h3><p>7 Days | ₹22,000/person</p></div>
+</div>
+
+<section class="card"><h2>Book a Tour</h2>
+<form action="/book" method="post">
+<input name="customerId" type="number" placeholder="Customer ID" required>
+<select name="packageId"><option value="1">Goa Beach Tour</option><option value="2">Manali Adventure</option><option value="3">Rajasthan Heritage</option></select>
+<input name="persons" type="number" min="1" value="1" required><button>Confirm Booking</button></form></section>
+
+<section class="card"><h2>Manage Booking</h2>
+<form action="/bookings" method="post"><input name="customerId" type="number" placeholder="Customer ID" required><button>View My Bookings</button></form>
+<form action="/cancel" method="post"><input name="customerId" type="number" placeholder="Customer ID" required><input name="bookingId" type="number" placeholder="Booking ID" required><button>Cancel Booking</button></form></section>
+
+<section class="card"><h2>Feedback</h2>
+<form action="/feedback" method="post"><input name="customerId" type="number" placeholder="Customer ID" required><textarea name="text" placeholder="Your feedback" required></textarea><input name="rating" type="number" min="1" max="5" placeholder="Rating 1-5" required><button>Submit Feedback</button></form></section>
+</main>
+<footer>Travel and Tour Management System</footer>
+</body></html>

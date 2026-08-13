@@ -1,0 +1,7 @@
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#222}
+header{background:#173f5f;color:white;text-align:center;padding:30px}
+main{max-width:1000px;margin:30px auto;padding:20px}.card,.package{background:white;padding:22px;margin:20px 0;border-radius:12px;box-shadow:0 3px 12px #0002}
+.packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+form{display:flex;flex-direction:column;gap:9px}input,select,textarea{padding:11px;border:1px solid #bbb;border-radius:6px}textarea{min-height:80px}
+button{padding:11px;background:#20639b;color:white;border:0;border-radius:7px;cursor:pointer}button:hover{background:#173f5f}
+table{width:100%;border-collapse:collapse}th,td{padding:9px;border:1px solid #ccc;text-align:left}footer{text-align:center;padding:25px;color:#666}a{color:#20639b}
